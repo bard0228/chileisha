@@ -43,7 +43,7 @@ function startStaticServer(entryFile) {
   const entryName = path.basename(absFile);
 
   const server = http.createServer((req, res) => {
-    const reqPath = (req.url || '/').split('?')[0];
+    const reqPath = decodeURIComponent((req.url || '/').split('?')[0]);
     const relPath = reqPath === '/' ? entryName : reqPath.replace(/^\/+/, '');
     const safePath = path.resolve(rootDir, relPath);
     if (!safePath.startsWith(rootDir)) {
