@@ -1,5 +1,6 @@
 {
   "hosting": {
+    "site": "chileisha-bard",
     "public": "public",
     "ignore": [
       "firebase.json",
