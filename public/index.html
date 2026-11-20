@@ -1,0 +1,417 @@
+<!doctype html>
+<html lang="zh-Hant-TW">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#f0f3f8">
+  <meta name="description" content="吃了啥飲食與每日營養紀錄">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="吃了啥">
+  <link rel="icon" type="image/png" sizes="32x32" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAABCGlDQ1BJQ0MgUHJvZmlsZQAAeJxjYGA8wQAELAYMDLl5JUVB7k4KEZFRCuwPGBiBEAwSk4sLGHADoKpv1yBqL+viUYcLcKakFicD6Q9ArFIEtBxopAiQLZIOYWuA2EkQtg2IXV5SUAJkB4DYRSFBzkB2CpCtkY7ETkJiJxcUgdT3ANk2uTmlyQh3M/Ck5oUGA2kOIJZhKGYIYnBncAL5H6IkfxEDg8VXBgbmCQixpJkMDNtbGRgkbiHEVBYwMPC3MDBsO48QQ4RJQWJRIliIBYiZ0tIYGD4tZ2DgjWRgEL7AwMAVDQsIHG5TALvNnSEfCNMZchhSgSKeDHkMyQx6QJYRgwGDIYMZAKbWPz9HbOBQAAAEgklEQVR42uWX32tcRRTHP2dm9lfzwySbH01QIVVJCRTB1gcpVohW8Sf4olD9J/RJH8QHQSpY6IM+9s1KkVJ8EMTSF5EKRQliVWhpsU3TUJvEJts0ye7emePDvXdzd7OblqIWdJZh2Tv3zPme73zPmbMiIso9HIZ7PP47AFT1rtbkXmvA3Y2RJBMRBNBMlPpPATCAIASUkFLahloRwYqgqoQ7CWarI1BVjAgigg8b2w0UCozki/TlcuTFUFNlOapzvbrOQm29QUMKxt+NBlS1yXiyp4+XR8bY2zfIjlIXfS5HwQiCQVFqIbDk61xeW+WHyp+cnL/G9zcWGkGkxyQitweQdX5/qYv3Hp7kpaFReq2jHjy1EKirEn8EIXZiRCiIIW8M60H5aWWZT69c4Mu5Kw0QWzKQCsmIEFR5YmCQI7se54FckaWohleNtZCIr1mWGkeJEhSMQMnmKDnHR7+f54PzZ5tApGxsYsAAXpXJ3j6+3rOPbhGWozouMbYb0NuKEBGUeM0nj4aKJV6dPs3J63M4Y5o0YVqjV8Aaw8cTj9KNYa5eo2Ac26yj1+XJ0BWDyB6dGFAQjQXrJGYmiiJeGR5rW5xMa/oEVZ4sD/Hc4AifzF7kxR+/o5TL8fm1Wd6/+CsllyeIBSQhQFryVcAaxBrUGLAOYwxFYzela8dSvH9gBCNwvbrOzNoKQQOnFv7gs7kZQkxwIj+N/VsL1iI+QqtVwq01wq1VdOUmslxh6dYKx67NNJWOlAHXjpbthSKqirMxpS4pQGzILGbfOPARoXITNQbp78MOljE93WAMXqB/YoIv5i5z6vQ3OGub6skmAJII6/zqCqLC62MPsqevjBF4ZnCE8a5ujElI855QqaDd3RSe38+2p/dR3DmBLQ9gbPyOT0T787vvxOXbGEgApEfgstGH5ESPXLnI1H1l9tg8O4vdLK2s8GZ5Oxa4uVxBowjt6aHwwrP0vvEapUd2tBaSBkgV4cLZX5rui7YMiAgBcNayUK3yYT7iq7fe5sa3p7GLN1it1yBfIDcyRG7XJF1P7aX40HhsnNIqsjGTLBFrmZmd7Xwti4hmp7VWBfSx3btVVTWoalSrabS6pr4eadPwPp4tI4Sg1WpVVVVPnDihQLxviy8RUdo9dM4poMeOHtUQRRplnYSgGkUdHdfr9cbvM2fOaLlcVmOMGmPaAjAdbigAfjt3DrGWerVK8B5NqbYWEjGGEPDe471HRHDOsba2xuHDh5mammJxcXHrrqgtqgTt+Pi4zszMbIrUe6++DQOzs7N66NAhnZiYaOSsMUaBttF3PIKs4djYmB48eFCnp6d1aWlpk9OrV6/q8ePH9cCBA9rf399w7Jzr6LRlNl9G6S2lqhhjCJnCMTw8zOjoKAMDAxhjmJ+f59KlS1QqlY20ci5O6RDurL27XVMqIhhj8N53PEfnXEMPW3XAnfpLzQqvU3eU3N2NmTpKI23X7fwtDPzrbXkaWTaa29GaMpLaZN9vt5bd27TbLEtx1iBdywJs/W59vzWYO2pK/1d/Tv8Cm+34C8vk9AUAAAAASUVORK5CYII=">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <title>吃了啥</title>
+  <link rel="stylesheet" href="liquid-glass.css">
+</head>
+<body>
+  <div class="lg-ambient-bg" aria-hidden="true"></div>
+
+  <div id="app-shell" class="wrap">
+    <!-- 頂部極簡液態玻璃導覽列 -->
+    <header class="app-header lg-panel">
+      <div class="brand">
+        <div class="brand-icon" aria-hidden="true">
+          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAABCGlDQ1BJQ0MgUHJvZmlsZQAAeJxjYGA8wQAELAYMDLl5JUVB7k4KEZFRCuwPGBiBEAwSk4sLGHADoKpv1yBqL+viUYcLcKakFicD6Q9ArFIEtBxopAiQLZIOYWuA2EkQtg2IXV5SUAJkB4DYRSFBzkB2CpCtkY7ETkJiJxcUgdT3ANk2uTmlyQh3M/Ck5oUGA2kOIJZhKGYIYnBncAL5H6IkfxEDg8VXBgbmCQixpJkMDNtbGRgkbiHEVBYwMPC3MDBsO48QQ4RJQWJRIliIBYiZ0tIYGD4tZ2DgjWRgEL7AwMAVDQsIHG5TALvNnSEfCNMZchhSgSKeDHkMyQx6QJYRgwGDIYMZAKbWPz9HbOBQAAAEgklEQVR42uWX32tcRRTHP2dm9lfzwySbH01QIVVJCRTB1gcpVohW8Sf4olD9J/RJH8QHQSpY6IM+9s1KkVJ8EMTSF5EKRQliVWhpsU3TUJvEJts0ye7emePDvXdzd7OblqIWdJZh2Tv3zPme73zPmbMiIso9HIZ7PP47AFT1rtbkXmvA3Y2RJBMRBNBMlPpPATCAIASUkFLahloRwYqgqoQ7CWarI1BVjAgigg8b2w0UCozki/TlcuTFUFNlOapzvbrOQm29QUMKxt+NBlS1yXiyp4+XR8bY2zfIjlIXfS5HwQiCQVFqIbDk61xeW+WHyp+cnL/G9zcWGkGkxyQitweQdX5/qYv3Hp7kpaFReq2jHjy1EKirEn8EIXZiRCiIIW8M60H5aWWZT69c4Mu5Kw0QWzKQCsmIEFR5YmCQI7se54FckaWohleNtZCIr1mWGkeJEhSMQMnmKDnHR7+f54PzZ5tApGxsYsAAXpXJ3j6+3rOPbhGWozouMbYb0NuKEBGUeM0nj4aKJV6dPs3J63M4Y5o0YVqjV8Aaw8cTj9KNYa5eo2Ac26yj1+XJ0BWDyB6dGFAQjQXrJGYmiiJeGR5rW5xMa/oEVZ4sD/Hc4AifzF7kxR+/o5TL8fm1Wd6/+CsllyeIBSQhQFryVcAaxBrUGLAOYwxFYzela8dSvH9gBCNwvbrOzNoKQQOnFv7gs7kZQkxwIj+N/VsL1iI+QqtVwq01wq1VdOUmslxh6dYKx67NNJWOlAHXjpbthSKqirMxpS4pQGzILGbfOPARoXITNQbp78MOljE93WAMXqB/YoIv5i5z6vQ3OGub6skmAJII6/zqCqLC62MPsqevjBF4ZnCE8a5ujElI855QqaDd3RSe38+2p/dR3DmBLQ9gbPyOT0T787vvxOXbGEgApEfgstGH5ESPXLnI1H1l9tg8O4vdLK2s8GZ5Oxa4uVxBowjt6aHwwrP0vvEapUd2tBaSBkgV4cLZX5rui7YMiAgBcNayUK3yYT7iq7fe5sa3p7GLN1it1yBfIDcyRG7XJF1P7aX40HhsnNIqsjGTLBFrmZmd7Xwti4hmp7VWBfSx3btVVTWoalSrabS6pr4eadPwPp4tI4Sg1WpVVVVPnDihQLxviy8RUdo9dM4poMeOHtUQRRplnYSgGkUdHdfr9cbvM2fOaLlcVmOMGmPaAjAdbigAfjt3DrGWerVK8B5NqbYWEjGGEPDe471HRHDOsba2xuHDh5mammJxcXHrrqgtqgTt+Pi4zszMbIrUe6++DQOzs7N66NAhnZiYaOSsMUaBttF3PIKs4djYmB48eFCnp6d1aWlpk9OrV6/q8ePH9cCBA9rf399w7Jzr6LRlNl9G6S2lqhhjCJnCMTw8zOjoKAMDAxhjmJ+f59KlS1QqlY20ci5O6RDurL27XVMqIhhj8N53PEfnXEMPW3XAnfpLzQqvU3eU3N2NmTpKI23X7fwtDPzrbXkaWTaa29GaMpLaZN9vt5bd27TbLEtx1iBdywJs/W59vzWYO2pK/1d/Tv8Cm+34C8vk9AUAAAAASUVORK5CYII=" width="34" height="34" alt="吃了啥">
+        </div>
+        <div class="brand-text">
+          <h1>吃了啥</h1>
+        </div>
+      </div>
+      <div class="header-actions">
+        <button type="button" class="btn lg-btn lg-rim" id="syncLiveBtn" aria-label="同步">
+          <svg class="sync-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21.5 2v6h-6M21.34 15.57a10 10 0 1 1-.57-8.38l5.67-5.67"/></svg>
+          <span id="syncText">同步</span>
+        </button>
+        <button type="button" class="btn lg-btn lg-rim" id="installPwaBtn" style="display:none" aria-label="安裝 App">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          <span>安裝</span>
+        </button>
+      </div>
+    </header>
+
+    <main id="main">
+      <!-- 區塊 1：今日進度 -->
+      <section class="lg-panel" id="progSec">
+        <div class="sec-head">
+          <div class="sec-title-wrap">
+            <h2>今日進度</h2>
+            <span class="badge-pill" id="tdate"></span>
+            <span class="badge-pill refeed-badge" id="rfBadge" style="display:none">補碳日</span>
+          </div>
+          <button type="button" class="accordion-trigger lg-btn lg-rim" data-acc-btn="progAccBody" aria-label="收合或展開今日進度">
+            <span>收合</span>
+            <svg class="accordion-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </button>
+        </div>
+        <div class="accordion-body" id="progAccBody">
+          <div class="accordion-inner">
+            <div class="prog" id="prog"></div>
+            <div class="goal-footer muted small">
+              <span id="goalnote"></span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 區塊 2：每日營養月曆 -->
+      <section class="lg-panel" id="calSec">
+        <div class="sec-head">
+          <div class="sec-title-wrap">
+            <h2>每日營養月曆</h2>
+          </div>
+          <button type="button" class="accordion-trigger lg-btn lg-rim" data-acc-btn="calAccBody" aria-label="收合或展開月曆">
+            <span>收合</span>
+            <svg class="accordion-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </button>
+        </div>
+        <div class="accordion-body" id="calAccBody">
+          <div class="accordion-inner">
+            <div class="calhead">
+              <div class="calhead-left">
+                <div class="lg-dd" id="dd">
+                  <button type="button" class="lg-dd-btn lg-btn lg-rim">
+                    <span class="lg-dd-label"></span>
+                    <svg class="lg-dd-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                  </button>
+                </div>
+                <button type="button" class="btn lg-btn lg-rim" id="back">回到最新日</button>
+              </div>
+            </div>
+            <div class="cal" id="cal"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 區塊 3：近 7 日營養總覽 -->
+      <section class="lg-panel" id="t7Sec">
+        <div class="sec-head">
+          <div class="sec-title-wrap">
+            <h2>近 7 日營養總覽</h2>
+          </div>
+          <button type="button" class="accordion-trigger lg-btn lg-rim" data-acc-btn="t7AccBody" aria-label="收合或展開近7日表格">
+            <span>收合</span>
+            <svg class="accordion-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </button>
+        </div>
+        <div class="accordion-body" id="t7AccBody">
+          <div class="accordion-inner">
+            <div class="tw">
+              <table id="t7"></table>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 區塊 4：找紀錄與餐別拆解 -->
+      <section class="lg-panel" id="searchSec">
+        <div class="sec-head">
+          <div class="sec-title-wrap">
+            <h2>找紀錄</h2>
+          </div>
+          <div class="lg-dd" id="mealDd">
+            <button type="button" class="lg-dd-btn lg-btn lg-rim">
+              <span class="lg-dd-label">全部餐別</span>
+              <svg class="lg-dd-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </button>
+          </div>
+        </div>
+
+        <div class="search-wrap">
+          <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          <input class="q lg-rim" id="q" placeholder="搜尋日期或食物" autocomplete="off">
+          <button type="button" class="clear-q lg-btn" id="clearQ" aria-label="清除搜尋">
+            <span class="clear-q-pill" aria-hidden="true">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+            </span>
+          </button>
+        </div>
+
+        <div class="quick-chips">
+          <button type="button" class="chip lg-btn" data-kw="">最新日</button>
+          <button type="button" class="chip lg-btn" data-kw="雞">雞肉</button>
+          <button type="button" class="chip lg-btn" data-kw="豬">豬肉</button>
+          <button type="button" class="chip lg-btn" data-kw="魚">魚類</button>
+          <button type="button" class="chip lg-btn" data-kw="高麗菜">高麗菜</button>
+          <button type="button" class="chip lg-btn" data-kw="白飯">白飯</button>
+          <button type="button" class="chip lg-btn" data-kw="優格">優格</button>
+          <button type="button" class="chip lg-btn" data-kw="乳清">乳清蛋白</button>
+        </div>
+
+        <div class="res" id="res"></div>
+      </section>
+    </main>
+  </div>
+
+  <!-- Portal：食物照片燈箱 Modal（雙層冰晶結構，直接掛載於 document.body） -->
+  <div id="viewer" class="lg-modal-backdrop" role="dialog" aria-modal="true" aria-label="食物照片預覽" aria-hidden="true">
+    <div class="lg-modal-scrim" aria-hidden="true"></div>
+    <div class="lg-ice-frame viewer-frame">
+      <div class="lg-inner-glass viewer-inner">
+        <div class="viewer-bar">
+          <button type="button" class="lg-btn lg-rim viewer-close" id="viewerClose" aria-label="關閉預覽">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+          </button>
+        </div>
+        <div class="viewer-media">
+          <img id="viewerImg" alt="餐點照片">
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <script src="liquid-glass.js"></script>
+  <script>
+    window.CHILEISHA_LIVE_API = "https://script.google.com/macros/s/AKfycbyXZIpcM41Lu-BZIp_O1giD99sOpipcCH2vdUAuQi9uq7_P74-VGIJrPGwrG9q-nZu5YQ/exec";
+  </script>
+  <script src="app.js"></script>
+<script>
+/**
+ * Android 12 Edge Overscroll Stretch Engine
+ * 當容器滾動到頂部繼續下拉，或到底部繼續上推時，觸發邊緣物理拉伸 (scaleY) 並在放手後彈性回彈。
+ * 建議將 targetEl 指向主內容容器（如 #app-shell）；歸位後自動清除 transform 以免影響 fixed/sticky 定位。
+ */
+function attachAndroidEdgeStretch(
+  scrollEl = document.scrollingElement || document.documentElement,
+  targetEl = document.querySelector('#app-shell, main') || document.body
+) {
+  let startY = 0;
+  let stretch = 0;
+  let activeEdge = null; // 'top' | 'bottom' | null
+
+  const applyStretch = (val, edge) => {
+    if (!edge || val <= 0.001) {
+      targetEl.style.transition = 'transform 0.36s cubic-bezier(0.22, 1, 0.36, 1)';
+      targetEl.style.transform = 'scaleY(1)';
+      const onEnd = (ev) => {
+        if (ev.propertyName === 'transform' && !activeEdge) {
+          targetEl.style.transform = '';
+          targetEl.style.transition = '';
+          targetEl.style.transformOrigin = '';
+          targetEl.removeEventListener('transitionend', onEnd);
+        }
+      };
+      targetEl.addEventListener('transitionend', onEnd);
+      // Safety fallback in case synthetic or zero-delta release skips transitionend
+      setTimeout(() => {
+        if (!activeEdge && targetEl.style.transform === 'scaleY(1)') {
+          targetEl.style.transform = '';
+          targetEl.style.transition = '';
+          targetEl.style.transformOrigin = '';
+          targetEl.removeEventListener('transitionend', onEnd);
+        }
+      }, 420);
+      return;
+    }
+    targetEl.style.transition = 'none';
+    targetEl.style.transformOrigin = edge === 'top' ? 'top center' : 'bottom center';
+    const scale = 1 + Math.min(0.055, val * 0.00028);
+    targetEl.style.transform = `scaleY(${scale.toFixed(4)})`;
+  };
+
+  window.addEventListener('touchstart', (e) => {
+    if (e.touches.length !== 1) return;
+    startY = e.touches[0].clientY;
+    stretch = 0;
+    activeEdge = null;
+  }, { passive: true });
+
+  window.addEventListener('touchmove', (e) => {
+    if (e.touches.length !== 1) return;
+    const dy = e.touches[0].clientY - startY;
+    const atTop = scrollEl.scrollTop <= 1;
+    const atBottom = scrollEl.scrollTop + window.innerHeight >= scrollEl.scrollHeight - 2;
+
+    if (atTop && dy > 0) {
+      activeEdge = 'top';
+      stretch = Math.sqrt(dy) * 14;
+      applyStretch(stretch, 'top');
+    } else if (atBottom && dy < 0) {
+      activeEdge = 'bottom';
+      stretch = Math.sqrt(-dy) * 14;
+      applyStretch(stretch, 'bottom');
+    } else if (activeEdge) {
+      activeEdge = null;
+      applyStretch(0, null);
+    }
+  }, { passive: true });
+
+  const release = () => {
+    if (activeEdge || stretch > 0) {
+      activeEdge = null;
+      stretch = 0;
+      applyStretch(0, null);
+    }
+  };
+  window.addEventListener('touchend', release, { passive: true });
+  window.addEventListener('touchcancel', release, { passive: true });
+}
+
+    attachAndroidEdgeStretch(
+      document.scrollingElement || document.documentElement,
+      document.getElementById('app-shell')
+    );
+  </script>
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        
+      });
+    }
+
+    let deferredPrompt = null;
+    const installBtn = document.getElementById('installPwaBtn');
+    window.addEventListener('beforeinstallprompt', (e) => {
+      e.preventDefault();
+      deferredPrompt = e;
+      if (installBtn) installBtn.style.display = 'inline-flex';
+    });
+    if (installBtn) {
+      installBtn.addEventListener('click', async () => {
+        if (!deferredPrompt) return;
+        deferredPrompt.prompt();
+        await deferredPrompt.userChoice;
+        deferredPrompt = null;
+        installBtn.style.display = 'none';
+      });
+    }
+  </script>
+
+  <!-- sushi-portal-dock-start -->
+  <style>
+  .hover-lift {
+    transition:
+      transform 0.24s cubic-bezier(0.22, 1, 0.36, 1),
+      box-shadow 0.24s cubic-bezier(0.22, 1, 0.36, 1),
+      background-color 0.20s ease,
+      border-color 0.20s ease;
+  }
+  @media (hover: hover) {
+    .hover-lift:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 12px 24px -6px rgba(60, 74, 92, 0.14);
+    }
+  }
+  .hover-lift:active {
+    transform: translateY(0) scale(0.96);
+    transition-duration: 0.08s;
+  }
+  .bottom-left-dock {
+    position: fixed;
+    left: 16px;
+    bottom: max(16px, env(safe-area-inset-bottom, 16px));
+    z-index: 150;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    pointer-events: none;
+  }
+  .liquid-glass-btn {
+    pointer-events: auto;
+    width: 48px;
+    height: 48px;
+    min-width: 48px;
+    min-height: 48px;
+    border-radius: 50%;
+    border: 1.5px solid rgba(255, 255, 255, 0.86);
+    background: linear-gradient(
+      145deg,
+      rgba(255, 255, 255, 0.62) 0%,
+      rgba(248, 251, 255, 0.38) 100%
+    );
+    backdrop-filter: blur(24px) saturate(180%);
+    -webkit-backdrop-filter: blur(24px) saturate(180%);
+    box-shadow:
+      inset 0 1.5px 1px rgba(255, 255, 255, 0.94),
+      0 10px 26px -6px rgba(45, 58, 76, 0.16);
+    color: var(--ink-1, #1e293b);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    padding: 0;
+    outline: none;
+  }
+  .liquid-glass-btn svg {
+    width: 20px;
+    height: 20px;
+    stroke: currentColor;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    fill: none;
+    transition: transform 0.25s cubic-bezier(0.22, 1, 0.36, 1);
+  }
+  .liquid-glass-btn:active svg.refresh-icon {
+    transform: rotate(180deg);
+  }
+  .bottom-left-dock .liquid-glass-btn {
+    font: inherit;
+    appearance: none;
+    -webkit-appearance: none;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  .bottom-left-dock .liquid-glass-btn svg {
+    display: block;
+    max-width: none;
+  }
+  .bottom-left-dock.sushi-portal-dock--embedded {
+    display: none !important;
+  }
+  </style>
+  <div class="bottom-left-dock">
+    <button id="liquid-back-btn" class="liquid-glass-btn hover-lift" type="button" aria-label="返回">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M15 18l-6-6 6-6" />
+      </svg>
+    </button>
+    <button id="liquid-refresh-btn" class="liquid-glass-btn hover-lift" type="button" aria-label="重新整理">
+      <svg class="refresh-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M21 12a9 9 0 1 1-2.64-6.36" />
+        <polyline points="21 3 21 9 15 9" />
+      </svg>
+    </button>
+  </div>
+
+  <script>
+  (function () {
+    var PORTAL = 'https://sushi-portal-bard.web.app/';
+    var dock = document.querySelector('.bottom-left-dock');
+    if (!dock) return;
+    var embedded = false;
+    try { embedded = window.self !== window.top; } catch (e) { embedded = true; }
+    if (embedded) {
+      dock.classList.add('sushi-portal-dock--embedded');
+      return;
+    }
+    var back = document.getElementById('liquid-back-btn');
+    var refresh = document.getElementById('liquid-refresh-btn');
+    if (back) back.addEventListener('click', function (e) {
+      e.preventDefault();
+      e.stopPropagation();
+      if (window.history.length > 1) window.history.back();
+      else window.location.href = PORTAL;
+    });
+    if (refresh) refresh.addEventListener('click', function (e) {
+      e.preventDefault();
+      e.stopPropagation();
+      window.location.reload();
+    });
+  })();
+  </script>
+  <!-- sushi-portal-dock-end -->
+</body>
+</html>
